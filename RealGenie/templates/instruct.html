@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+ <!-- ======= Features Section ======= -->
+ <section id="features" class="features">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>What we need before </h2>
+            <p>Starting</p>
+          </div>
+      <div class="row">
+        <div class="image col-lg-6" data-aos="fade-right">
+        <img class="image col-lg-12" src="{{ url_for('static', filename='assets/img/about.jpg') }}"  style="border-radius: 20px;">
+        </div> 
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <b><p>Before we start make sure you know the following:</p></b>
+        </div>
+        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+            <i class="bx bx-cube-alt"></i>
+            <h4>1) Api_Key Requirements</h4>
+            <p>You will be required to input your own API_key form <a href="https://rapidapi.com/apidojo/api/realty-in-ca1/" target="_blank">RapidAPI</a> to get the app started.</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+            <i class="bx bx-images"></i>
+            <h4>2) How to use</h4>
+            <p>Fill all the input fields you see in the SanBox webpage and click start. <br>
+                <span style="color: brown;">Important:</span> Make sure that the address and city are correctly spelled.
+            </p>
+          </div>
+          <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+            <i class="bx bx-shield"></i>
+            <h4>Disclaimer</h4>
+            <p>By clicking 'Start' you will accept all the <a href="{{ url_for('termsofuse') }}" rel="noopener noreferrer">terms of use</a> of the Real.Genie app.</p>
+          </div>
+        </div>
+      </div>
+      <div class="start-container"><br><br>
+     <center><a href="{{ url_for('report_creation') }}" class="get-started-btn scrollto" style="color: black;">Start</a></center>
+      </div>
+    </div>
+  </section><!-- End Features Section -->
+
+
+{% endblock content %}

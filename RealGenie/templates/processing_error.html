@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div style="min-height:100vh; margin-top: 8%;" class="mx-auto w-50">
+    <h1>Something Went Wrong</h1>
+    <p>Please check you API key or the orthography of your request.</p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0Ww2QJs-rYXDxb_NTBuHSAHaHx%26pid%3DApi&f=1&ipt=9c817652731d284dac545b6191362f0c4b510e39517f32c7ecff05b596e4a421&ipo=images" 
+    alt="" style="border-radius: 20px;">
+    <br><br>
+    <p><span style="color: red;">NOTE:</span> If you just created your account for the API, make sure you subscribed to the web-site before you start.</p>
+    <a href="{{ url_for('report_creation') }}"><b>Let's try again</b></a>
+</div>
+
+{% endblock content %}

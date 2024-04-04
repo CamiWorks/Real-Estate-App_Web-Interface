@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+  <main id="main">
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center justify-content-center">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-xl-6 col-lg-8">
+        <h1>Real<span>.</span>Genie</h1>
+        <h2>New Real Estate Digital Solutions</h2>
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+        <h1>Real<span>.</span>Genie</h1>
+
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Real Estate Insights.</h3>
+            <p class="fst-italic">
+              RealGenie is a powerful real estate tool designed to provide real-time demographic data for specific geographical locations across Canada. 
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Brand new Web-interface.</li>
+              <li><i class="ri-check-double-line"></i> Simple Installation.</li>
+              <li><i class="ri-check-double-line"></i> Easily deploy-able with Docker-Compose. Soon...</li>
+            </ul>
+            <p>
+              Whether you're researching properties, evaluating neighborhoods, or analyzing market trends, RealGenie offers comprehensive insights to support your decision-making process. From population demographics to socio-economic indicators, RealGenie empowers users with the information they need to make informed real estate decisions in the Canadian market.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Enough talking, let's</p>
+          <a class="cta-btn" href="{{url_for('sandbox')}}">Start</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+  </main><!-- End #main -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Insightful Data</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4>Demographics</h4>
+              <p>Explore insightful data collected on lifestyle and environmental factors.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Price & Valuation</h4>
+              <p>Discover the current property values in the area and make insightful decisions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4>Fast Requets</h4>
+              <p>Perform quick and reliable analysis in a matter of seconds.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>Indexes</h4>
+              <p>Track essential metrics for property assessment and valuation.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4>New Look</h4>
+              <p>Now featuring a new web design, easy to use and deploy "No More Commands"</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4>Coming Up...</h4>
+              <p>Expanded analysis covering not only residential properties but also commercial and enterprise sectors.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+
+{% endblock content %}
